@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villa Boongann Depok</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">
+                <i class="fa-solid fa-hotel mr-2"></i>Villa Boongann
+            </h1>
+            <button id="menu-btn" class="md:hidden focus:outline-none text-2xl text-blue-600">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="hidden md:flex space-x-6 font-medium">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#villa" class="nav-link">Villa</a></li>
+                <li><a href="#booking" class="nav-link">Booking</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidebar Mobile Menu -->
+    <div id="sidebar"
+        class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50">
+        <div class="p-4 flex justify-between items-center border-b">
+            <h2 class="text-xl font-bold text-blue-600">Menu</h2>
+            <button id="close-btn" class="text-xl text-gray-700">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul class="p-6 space-y-4 text-gray-700 font-medium">
+            <li><a href="#home" class="nav-link flex items-center gap-2"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#about" class="nav-link flex items-center gap-2"><i class="fa-solid fa-info-circle"></i>
+                    Tentang</a></li>
+            <li><a href="#villa" class="nav-link flex items-center gap-2"><i class="fa-solid fa-building"></i> Villa</a>
+            </li>
+            <li><a href="#booking" class="nav-link flex items-center gap-2"><i class="fa-solid fa-calendar-check"></i>
+                    Booking</a></li>
+            <li><a href="#contact" class="nav-link flex items-center gap-2"><i class="fa-solid fa-envelope"></i>
+                    Kontak</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero -->
+    <section id="home" class="relative h-screen flex items-center justify-center bg-cover bg-center hero-section">
+        <div class="bg-black bg-opacity-50 p-8 rounded-lg text-center text-white glow-box">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di Villa Boongann Depok</h2>
+            <p class="mb-6">Rasakan liburan nyaman dengan nuansa modern & alami</p>
+            <a href="#booking" class="px-6 py-3 bg-blue-600 rounded-lg font-medium hover:bg-blue-700 transition">Pesan
+                Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="about" class="py-16 px-6 md:px-16 max-w-7xl mx-auto reveal">
+        <h2 class="text-3xl font-bold text-center mb-8 text-blue-600">Tentang Kami</h2>
+        <p class="text-center max-w-2xl mx-auto text-gray-600">
+            Villa Boongann di Depok adalah villa penginapan modern dengan desain elegan, fasilitas lengkap, dan suasana
+            tenang. Cocok untuk keluarga, pasangan, maupun acara spesial.
+        </p>
+    </section>
+
+    <!-- Villa -->
+    <section id="villa" class="py-16 bg-gray-100 px-6 md:px-16 reveal">
+        <h2 class="text-3xl font-bold text-center mb-8 text-blue-600">Pilihan Villa</h2>
+        <div class="grid gap-8 md:grid-cols-3 max-w-7xl mx-auto">
+            <div class="villa-card">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="villa-img">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2"><i class="fa-solid fa-star text-yellow-500"></i> Villa Premium
+                    </h3>
+                    <p class="text-gray-600 mb-4">Kolam renang pribadi, view city Depok, cocok untuk keluarga besar.</p>
+                    <span class="block font-semibold text-blue-600">Rp 1.800.000 / malam</span>
+                </div>
+            </div>
+            <div class="villa-card">
+                <img src="https://cf-img.villa-finder.com/cf/m/villas/villa-castil-di-udara/villa-castil-di-udara-castil-di-udara-pool-day-2-615a6eda00490.jpg"
+                    class="villa-img">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2"><i class="fa-solid fa-heart text-pink-500"></i> Villa Honeymoon
+                    </h3>
+                    <p class="text-gray-600 mb-4">Romantis, jacuzzi, dekorasi lampu bohemian, untuk pasangan.</p>
+                    <span class="block font-semibold text-blue-600">Rp 1.300.000 / malam</span>
+                </div>
+            </div>
+            <div class="villa-card">
+                <img src="https://magiagranite.com/uploads/80fac7af-2ae0-4e00-8fdc-8b1459a01038.jpg" class="villa-img">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2"><i class="fa-solid fa-people-roof text-green-600"></i> Villa
+                        Family</h3>
+                    <p class="text-gray-600 mb-4">Ruang tamu luas, area BBQ, taman bermain anak-anak.</p>
+                    <span class="block font-semibold text-blue-600">Rp 1.000.000 / malam</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking -->
+    <section id="booking" class="py-16 px-6 md:px-16 max-w-4xl mx-auto reveal">
+        <h2 class="text-3xl font-bold text-center mb-8 text-blue-600">Form Booking</h2>
+        <form id="bookingForm" class="bg-white shadow-lg rounded-lg p-8 space-y-6">
+            <div>
+                <label class="block font-medium mb-2">Nama</label>
+                <input type="text" class="form-input" required>
+            </div>
+            <div>
+                <label class="block font-medium mb-2">Email</label>
+                <input type="email" class="form-input" required>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block font-medium mb-2">Check-in</label>
+                    <input type="date" class="form-input" required>
+                </div>
+                <div>
+                    <label class="block font-medium mb-2">Check-out</label>
+                    <input type="date" class="form-input" required>
+                </div>
+            </div>
+            <div>
+                <label class="block font-medium mb-2">Pilih Villa</label>
+                <select class="form-input" required>
+                    <option value="">-- Pilih --</option>
+                    <option>Villa Premium</option>
+                    <option>Villa Honeymoon</option>
+                    <option>Villa Family</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-primary">Pesan Sekarang</button>
+        </form>
+        <p id="successMsg" class="text-center text-green-600 font-semibold mt-6 hidden">🎉 Booking berhasil! Kami akan
+            menghubungi Anda segera.</p>
+    </section>
+
+    <!-- Form Spree Contact -->
+    <section id="spree" class="py-16 px-6 md:px-16 bg-gray-900 text-white text-center reveal">
+        <h2 class="text-3xl font-bold mb-4">Hubungi Kami</h2>
+        <p class="mb-6 text-gray-300">Kirim pesan, saran, atau pertanyaan Anda ke Villa Boongann Depok.</p>
+
+        <form action="https://formspree.io/f/myzdqbkn" method="POST"
+            class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg space-y-6">
+            <!-- Nama -->
+            <div>
+                <label class="block text-left text-gray-700 font-medium mb-2">Nama</label>
+                <input type="text" name="nama" placeholder="Masukkan nama Anda"
+                    class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-900"
+                    required>
+            </div>
+            <!-- Email -->
+            <div>
+                <label class="block text-left text-gray-700 font-medium mb-2">Email</label>
+                <input type="email" name="email" placeholder="Masukkan email Anda"
+                    class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-900"
+                    required>
+            </div>
+            <!-- Pesan -->
+            <div>
+                <label class="block text-left text-gray-700 font-medium mb-2">Pesan</label>
+                <textarea name="pesan" rows="4" placeholder="Tulis pesan Anda di sini..."
+                    class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-900"
+                    required></textarea>
+            </div>
+            <!-- Tombol -->
+            <button type="submit"
+                class="w-full py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+                <i class="fa-solid fa-paper-plane mr-2"></i>Kirim Pesan
+            </button>
+        </form>
+    </section>
+
+
+    <!-- Kontak -->
+    <section id="contact" class="py-16 bg-gray-100 px-6 md:px-16 reveal">
+        <h2 class="text-3xl font-bold text-center mb-8 text-blue-600">Kontak Kami</h2>
+        <p class="text-center text-gray-600 max-w-2xl mx-auto">
+            📍 Jl. Margonda Raya No. 123, Depok <br>
+            📞 +62 812 9999 8888 <br>
+            ✉️ info@villaboongann.com
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-500 text-white py-10 mt-16">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <!-- Hubungi Kami -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Hubungi Kami</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Layanan Pelanggan</a></li>
+                    <li><a href="#" class="hover:underline">Jaminan Layanan</a></li>
+                    <li><a href="#" class="hover:underline">Info Layanan Lainnya</a></li>
+                </ul>
+            </div>
+
+            <!-- Tentang Kami -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Tentang Kami</h3>
+                <ul class="space-y-2">
+                    <li><a href="#about" class="hover:underline">Tentang Villa Boongann</a></li>
+                    <li><a href="#" class="hover:underline">Berita</a></li>
+                    <li><a href="#" class="hover:underline">Karier</a></li>
+                    <li><a href="#" class="hover:underline">Syarat & Ketentuan</a></li>
+                    <li><a href="#" class="hover:underline">Kebijakan Privasi</a></li>
+                </ul>
+            </div>
+
+            <!-- Layanan Lain -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Layanan Lain</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Paket Liburan</a></li>
+                    <li><a href="#" class="hover:underline">Event & Gathering</a></li>
+                    <li><a href="#" class="hover:underline">Keamanan & Privasi</a></li>
+                </ul>
+            </div>
+
+            <!-- Metode Pembayaran -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Metode Pembayaran</h3>
+                <div class="flex space-x-3 mb-4">
+                    <img src="https://img.icons8.com/color/48/000000/bank-card-back-side.png" class="h-8" alt="Bank">
+                    <img src="https://img.icons8.com/color/48/000000/visa.png" class="h-8" alt="Visa">
+                    <img src="https://img.icons8.com/color/48/000000/mastercard.png" class="h-8" alt="Mastercard">
+                </div>
+
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <span class="font-bold">Villa Boongann</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="mt-8 flex justify-center space-x-6">
+            <a href="#"><i class="fa-brands fa-x-twitter text-xl hover:text-gray-200"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook text-xl hover:text-gray-200"></i></a>
+            <a href="https://www.instagram.com/dnprtmmskri/"><i class="fa-brands fa-instagram text-xl hover:text-gray-200"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube text-xl hover:text-gray-200"></i></a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="mt-6 text-center text-sm text-gray-100">
+            &copy; 2025 Villa Boongann Depok. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
